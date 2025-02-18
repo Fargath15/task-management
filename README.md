@@ -11,7 +11,7 @@ Create, read, update, and delete tasks
 Unit tests for API endpoints
 In-memory MongoDB setup for tests
 
-# Make sure you have the following installed:
+## Make sure you have the following installed:
 
 Node.js (v14 or above)
 MongoDB (or use MongoDB Atlas for cloud DB)
@@ -42,7 +42,7 @@ MongoDB (or use MongoDB Atlas for cloud DB)
 
 6. API Documentation
 
-   # User Registration
+   ### User Registration
 
    POST /api/v1/auth/register
    Register a new user. The body should contain:
@@ -53,7 +53,7 @@ MongoDB (or use MongoDB Atlas for cloud DB)
    "role": "Manager"
    }
 
-   # User Login
+   ### User Login
 
    POST /api/v1/auth/login
    Log in with email and password. The body should contain:
@@ -63,12 +63,12 @@ MongoDB (or use MongoDB Atlas for cloud DB)
    }
    The response will be a json which has a token to authenticate upcoming requests
 
-   # Get All Users (Admin Only)
+   ### Get All Users (Admin Only)
 
    POST /api/v1/auth/users
    Fetch all users. This route requires admin authentication.
 
-   # Create Task
+   ### Create Task
 
    POST /api/v1/tasks
    Create a new task. The body should contain:
@@ -79,12 +79,12 @@ MongoDB (or use MongoDB Atlas for cloud DB)
    "dueDate": "2025-02-20"
    }
 
-   # Get All Tasks
+   ### Get All Tasks
 
    GET /api/v1/tasks
    Fetch all tasks. Requires an authenticated user.
 
-   # Update Task Status
+   ### Update Task Status
 
    PUT /api/v1/tasks/:task_id
    Update the task's status. The body should contain:
@@ -92,7 +92,7 @@ MongoDB (or use MongoDB Atlas for cloud DB)
    "status": "In Progress"
    }
 
-   # Delete Task
+   ### Delete Task
 
    DELETE /api/v1/tasks/:task_id
    Delete the task with the given task_id.
